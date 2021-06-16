@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesBase.css' %}">
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/JavaS.js' %}"></script>
+	</head>
+
+	<body>
+		<div class = "bandeau-haut">
+                <input type="text" class="recherche" onkeyup="myFunction()" placeholder="Recherche.." title="Type in a category">
+                <select class="part-pro">
+                    <option value="particulier">Particulier</option>
+                    <option value="particulier">Professionnel</option>
+                </select>
+                    <button class="validerecherche">{% load static %} <img src="{% static 'image/loupeblack.png' %}" width="21px" > </button>
+
+                <a class="logoinfo" href="#"> {% load static %} <img src="{% static 'image/info.png' %}" width="25px"> </a>
+
+                <div class="share-container">
+                    <a  class="logo-share"> {% load static %} <img src="{% static 'image/share.png' %}" width="25px"> </a>
+                    <div class="form-share">
+                        <a class="res1" href="https://twitter.com/intent/tweet?url=TEST TWEET COLCOT"> {% load static %} <img src="{% static 'image/logo_twitter.png' %}" width="25px"> </a>
+                        <a class="res2" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.colcot.com%2F&amp;src=sdkpreparse"> {% load static %} <img src="{% static 'image/logo_facebook.png' %}" width="25px"> </a>
+                    </div>
+                </div>
+
+                <a  class="logopanier" href="#"> {% load static %} <img src="{% static 'image/panier.png' %}" width="25px"> </a>
+                
+                <div class="profile">
+                    <a  class="logo-profile"> {% load static %} <img src="{% static 'image/avatar.png' %}" width="25px"> </a>
+                    <div class="profile-content">
+                        {% if user.is_authenticated %}
+                            <a href="/profile">mon compte</a>
+                            <hr/>
+                            <a href="/logout">Se déconnecter</a>
+                        {% else %}
+                            <a href="/login">se connecter</a>
+                        {%endif%}
+                    </div>
+                </div>
+
+                <button class="blackwhite-btn" id="blackwhite" onclick="changecolor()">{% load static %} <img src="{% static 'image/blackwhite.png' %}" id="logobw" width="25px" > </button>
+        </div>
+        
+        <div class="bandeau-gauche">
+			<a href="../../.."> {% load static %} <img src="{% static 'image/logo.png' %}" class="logo"> </a>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <button class="openmodel" onclick="openNavmodelisme()">MODELISME</button>
+                <button class="openphila" onclick="openNavphilatelie()">PHILATELIE</button>
+                <button class="openoenol" onclick="openNavoenologie()">OENOLOGIE</button>
+                <button class="openother" onclick="openNavautres()">AUTRES</button>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; CATEGORIE</button>
+            </div>
+            
+            <div class="sidebarCategorie" id="sidebarModelisme">
+                <a href="#" >MODELISME 1</a>
+                <a href="#" >MODELISME 2</a>
+                <a href="#" >MODELISME 3</a>
+            </div>
+            <div class="sidebarCategorie" id="sidebarPhilatelie">
+                <a href="#" >PHILATELIE 1</a>
+                <a href="#" >PHILATELIE 2</a>
+                <a href="#" >PHILATELIE 3</a>
+            </div>
+            <div class="sidebarCategorie" id="sidebarOenoligie">
+                <a href="#" >OENOLOGIE 1</a>
+                <a href="#" >OENOLOGIE 2</a>
+                <a href="#" >OENOLOGIE 3</a>
+            </div>
+            <div class="sidebarCategorie" id="sidebarAutres">
+                <a href="#" >AUTRES 1</a>
+                <a href="#" >AUTRES 2</a>
+                <a href="#" >AUTRES 3</a>
+            </div>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

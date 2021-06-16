@@ -1,0 +1,364 @@
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #3f3f3f;
+    color: #ffc28c;
+    border: none;
+    padding: 20px 23px;
+    margin:0px;
+  }
+  
+  .openbtn:hover {
+    background-color: #ffc28c;
+    color: #222222;
+    transition: 0.5s;
+  }
+  
+  /* Adaptation autres ecran*/
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  } 
+
+.blackwhite{
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin-left: 8%;
+  padding: 5px 1px 1px 1px;
+}
+
+.blackwhite:hover{
+  opacity: 50%;
+  transform:rotate(360deg);
+  transition: 0.5s;
+}
+
+.dark-mode {
+  background-color: #2c2c2c;
+}
+
+.part-pro{
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  padding: 0.48% 0.48% 0.48% 0.48%;
+}
+
+.sidebar button{
+  cursor:pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8%;
+  padding-left: 10%;
+  border: none;
+  position: relative;
+  display: inline-block;
+  color: white;
+  background-color: #3f3f3f;
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.sidebar button:hover{
+  color: #ffc28c;
+  transition: 0.5s;
+}
+
+.sidebarModelisme{
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 147px;
+  left: 150px;
+  background-color: #3f3f3f;
+  overflow-x: hidden;
+  padding-top: 5%;
+  transition: 0.1s;
+  opacity: 75%;
+}
+
+.sidebarModelisme a {
+  padding: 0px 0px 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFF;
+  display: block;
+  transition: 0.1s;
+  text-align: center;
+}
+
+.sidebarModelisme a:hover {
+  color: #ffc28c;
+}
+
+.sidebarPhilatelie{
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 147px;
+  left: 150px;
+  background-color: #3f3f3f;
+  overflow-x: hidden;
+  padding-top: 5%;
+  transition: 0.1s;
+  opacity: 75%;
+}
+
+.sidebarPhilatelie a {
+  padding: 0px 0px 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFF;
+  display: block;
+  transition: 0.1s;
+  text-align: center;
+}
+
+.sidebarPhilatelie a:hover {
+  color: #ffc28c;
+}
+
+.sidebarOenoligie{
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 147px;
+  left: 150px;
+  background-color: #3f3f3f;
+  overflow-x: hidden;
+  padding-top: 5%;
+  transition: 0.1s;
+  opacity: 75%;
+}
+
+.sidebarOenoligie a {
+  padding: 0px 0px 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFF;
+  display: block;
+  transition: 0.1s;
+  text-align: center;
+}
+
+.sidebarOenoligie a:hover {
+  color: #ffc28c;
+}
+
+.sidebarAutres{
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 147px;
+  left: 150px;
+  background-color: #3f3f3f;
+  overflow-x: hidden;
+  padding-top: 5%;
+  transition: 0.1s;
+  opacity: 75%;
+}
+
+.sidebarAutres a {
+  padding: 0px 0px 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFF;
+  display: block;
+  transition: 0.1s;
+  text-align: center;
+}
+
+.sidebarAutres a:hover {
+  color: #ffc28c;
+}
+
+.ajouter{
+ position: absolute;
+ bottom: 5%;
+ right: 5%;
+}
+
+.ajouter:hover{
+  opacity: 50%;
+  transform:rotate(180deg);
+  transition: 0.5s;
+}
+
+.ajouterwhite{
+  display: none;
+}
+
+.ajouterblack{
+  display: block;
+}
+
+.logoinfo {
+  cursor: pointer;
+  border: none;
+  margin: 0% 0% 0% 2%;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logopanier {
+  cursor: pointer;
+  border: none;
+  margin: 0% 2% 0% 2%;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropbtn:hover {
+  opacity: 50%;
+  transition: 0.5s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  background-color: #222222;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(37, 37, 37, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ffc28c;
+  border-radius: 10px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(102, 102, 102);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.profilecontent {
+  /* HDBG */
+  background: #222222;
+  color: white;
+  border-radius: 5px;
+  padding: 0em 72em 5em 10em;
+  position: absolute;
+  top: 55%;
+  left: 54%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.profilecontent div input{
+  display: inline;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  margin-top: 15%;
+  margin-left: 3%;
+}
+
+.btnMEVitrine{
+  border: none;
+  border-radius: 10px;
+  margin-top: 10%;
+  padding: 3.5% 5% 3.5% 5%;
+  margin-bottom: 5%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  background-color: #4b4b4b;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  border-radius: 10px;
+  letter-spacing: 4px;
+}
+
+.btnMEVitrine:hover{
+  background-color: #ffc28c;
+  color: #222222;
+}
+
+.titre{
+  font-size: 20px;
+  color: #ffc28c;
+}
+
+.inputimg{
+  position: absolute;
+  top: 23%;
+  left: 54%;
+  margin-right: -50%;
+  opacity: 0%;
+}
+
+.fauxboutton{
+  position: absolute;
+  top: 22%;
+  left: 54%;
+  margin-right: -50%;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  margin-bottom: 5%;
+  display: inline-block;
+  color: white;
+  background-color: #4b4b4b;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  border-radius: 10px;
+  letter-spacing: 4px;
+}
+
+.addimg:hover div{
+  background-color: #ffc28c;
+  color: #222222;
+}
+
+#preview{
+  width: 200px;
+  display: inline-block;
+}
+#preview img{
+  width: 100%;
+}
+
+.output{
+  width: 500px;
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.border{
+  width: 510px;
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}

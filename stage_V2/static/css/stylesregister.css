@@ -1,0 +1,104 @@
+@font-face { font-family: Bariol; src: url('bariol_regular-webfont.ttf'); }
+
+* {
+  font-family: Bariol;
+}
+
+body {
+  background:#e8e2de;
+  text-align: center;
+}
+.logo{
+  margin-bottom: 10%;
+}
+
+.signup{
+  margin-top: 15%;
+}
+
+.register-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background-color: #414141;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.register-box .user-box {
+  position: relative;
+}
+
+.register-box .user-box input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.register-box .user-box .form-text {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff; 
+  pointer-events: none;
+  transition: .5s;
+}
+
+.register-box .user-box input:focus ~ .form-text ,
+.register-box .user-box input:valid ~ .form-text{
+  top: -20px;
+  left: 0;
+  color: white;
+  font-size: 12px;
+}
+
+.register-box .form-text a {
+  position: relative;
+  display: inline-block;
+  color: white;
+  background-color: #222222;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  border-radius: 10px;
+  letter-spacing: 4px
+}
+
+.btnInscription{
+  border: none;
+  border-radius: 10px;
+  margin-top: 10%;
+  padding: 3.5% 5% 3.5% 5%;
+  margin-bottom: 5%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  background-color: #222222;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  border-radius: 10px;
+  letter-spacing: 4px;
+}
+
+.btnInscription:hover{
+  /* background-color: #ffc28c; */
+  background-color: #ffc28c;
+  color: #222222;
+}

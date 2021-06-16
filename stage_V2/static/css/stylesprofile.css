@@ -1,0 +1,188 @@
+.content{
+  display: inline-flex;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.cateselect{
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border: 2px solid #ffc28c;
+  background: #616161;
+  margin-top: 8%;
+  margin-left: 50px;
+}
+
+.cateselect:hover{
+  background-color: #ffc28c;
+  border: 2px solid #FFF;
+  color: #222;
+  transition: 0.5s;
+}
+
+.logoselect{
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.editselect{
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border: 2px solid #ffc28c;
+  background: #616161;
+  margin-top: 8%;
+  width: 50px;
+  margin-left: 1200px;
+}
+
+.editselect:hover{
+  background-color: #ffc28c;
+  border: 2px solid #FFF;
+  color: #222;
+  transition: 0.5s;  
+}
+
+.profil_avion{
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 87.5%;
+  height: 65%;
+  background-color: rgb(15, 221, 25);
+  border-radius: 10px;
+}
+
+.profil_timbre{
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 87.5%;
+  height: 65%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.profil_vins{
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 87.5%;
+  height: 65%;
+  background-color: rgb(38, 204, 204);
+  border-radius: 10px;
+}
+
+.profil_autre{
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 87.5%;
+  height: 65%;
+  background-color: rgb(255, 29, 29);
+  border-radius: 10px;
+}
+
+.profil_defaut{
+  background-color: #222;
+  display: inline-flex;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  background-color: #222;
+  border-radius: 10px;
+  width: 87.5%;
+  height: 65%;
+}
+
+.infointern{
+  color: #ffffff;
+  margin-left: 1%;
+}
+
+.infointernreponse{
+  color: #ffc28c;
+  display: inline-block;
+}
+
+.modifinfointern{
+  margin-left: 10%;
+  background-color: #616161;
+  color: #ffc28c;
+  border: none;
+  border-radius: 10px;
+}
+
+.modifinfointern:hover{
+  background-color: #ffc28c;
+  color: #222;
+  transition: 0.5s;
+}
+
+.closebuttonprofil{
+  display: block;
+  position: absolute;
+  top: 28%;
+  left: 10%;
+  border: none;
+  background-color:#ffc28c;
+  width: 30px;
+  height: 30px;
+  border: #222 solid 3px;
+}
+
+.closebuttonprofil:hover{
+  background-color: #222;
+  color: #ffc28c;
+  cursor: pointer;
+}
+
+.editchoix{
+  display: none;
+  align-items: center;
+  position: absolute;
+  top: 23%;
+  right: 11%;
+  width: 25%;
+  height: 7%;
+  background-color: #222;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.closebuttonedit{
+  display: none;
+  position: absolute;
+  top: 22%;
+  right: 34.5%;
+  border: none;
+  background-color:#ffc28c;
+  width: 30px;
+  height: 30px;
+  border: #222 solid 3px; 
+}
+
+.closebuttonedit:hover{
+  background-color: #222;
+  color: #ffc28c;
+  cursor: pointer;
+}
+.profil_defaut .infointern .modifinfointern{
+  margin-left: 10%;
+  background-color: #616161;
+  color: #ffc28c;
+  border: none;
+  border-radius: 10px;
+}

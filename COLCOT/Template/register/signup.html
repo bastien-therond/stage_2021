@@ -1,0 +1,43 @@
+<html>
+	<head>
+		{% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesRegister.css' %}">
+        <title>Inscription</title>
+	</head>
+        <div class="register-box">
+            {% load static %} 
+            <img src="{% static 'image/logo.png' %}" class="logo">
+            <form method = "POST" class="form" action="">
+                {% csrf_token %}
+                <div class="user-box">
+                    {{form.username}}
+                    <span class='form-text'>Nom d'utilisateur</label>    
+                </div>
+                <div class="user-box">
+                    {{form.first_name}}
+                    <span class='form-text'>Prenom</span>
+                </div>
+                <div class="user-box">
+                    {{form.last_name}}  
+                    <span class='form-text'>Nom</span>
+                </div>
+                <div class="user-box">
+                    {{form.email}}
+                    <span class='form-text'>Email</span>
+                </div>
+                <div class="user-box">
+                    {{form.password1}}
+                    <span class='form-text'>Password</span>
+                </div>
+                <div class="user-box">
+                    {{form.password2}}
+                    <span class='form-text'>Comfirmation Password</span>
+                </div>
+                <input class="btnInscription" type="submit" value="S' INSCRIRE">
+                {% for message in messages %}
+					<p id="messages">{{message}}</p>
+				{% endfor %}
+                </a>
+            </form>
+        </div>
+</html>

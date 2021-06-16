@@ -1,0 +1,68 @@
+{% extends 'base/base.html' %}
+
+{% block content%}
+        <head>
+            {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesdepot.css' %}">
+            <script src="{% static 'js/JavaS.js' %}"></script>
+            <script src="{% static 'js/jquery.js' %}"></script>
+        </head>
+        <form method = "post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="titre"> DEPOSEZ VOTRE ANNONCE</div>
+                <div class="user-box">
+                    <label>Vendeur</label>
+                    <div class="saisie">{{ form.vendeur }}</div>
+                </div>
+                <div class="user-box">
+                    <label>TITRE</label>
+                    <div class="saisie">{{ form.titre }}</div>
+                </div>
+                <div class="user-box">  
+                    <label>Prix</label>
+                    <div class="saisie">{{ form.prix }}</div>
+                <div>
+                <div class="user-box">
+                    <label>Type</label>
+                    <div class="saisie">{{ form.category }}</div>
+                </div>
+                <div class="user-box">  
+                    <label>Modele</label>
+                    <div class="saisie">{{ form.modele }}</div>
+                </div>
+                <div class="user-box"> 
+                    <label>Reference</label>
+                    <div class="saisie">{{ form.reference }}</div>
+                </div>
+                <div class="user-box">
+                    <label>Echelle</label>
+                     <div class="saisie"> {{ form.Echelle }} </div>
+                </div>
+                <div class="user-box">
+                    <label>Fabricant</label>
+                    <div class="saisie">{{ form.fabricant }}</div>
+                </div>
+                <div class="user-box">
+                    <label>description</label>
+                    <div class="saisie">{{ form.description }}</div>
+                </div>
+            <div class="PVR">
+                <label>JE POSSEDE</label>
+                <div class="checkbox">{{  form.je_possede }} </div>
+                <label id="je_vend">JE VEND</label>
+                <div class="checkbox"> {{ form.je_vend }} </div>
+                <label id="je_cherche">JE RECHERCHE</label>
+                <div class="checkbox"> {{ form.je_recherche }} </div>
+            </div>
+            <br>
+        </div>
+        <div class="addimg">
+            <div class="fauxboutton" onchange="loadFile(event)"> {{ form.docfile }}  </div></div>
+            {% load static %} <img src="{% static 'image/border.png' %}" class="border">
+            <input type="submit" value="AJOUTER A LA VITRINE" class="btnMEVitrine">
+            </form>
+            {% for message in messages %}
+				<p class="btnMEVitrine">{{ message }}</p>
+			{% endfor %}
+        <img id="output" class="output"/>
+{%endblock%}

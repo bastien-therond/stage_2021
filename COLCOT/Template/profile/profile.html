@@ -1,0 +1,38 @@
+{% extends 'base/base.html' %}
+
+{% block content%}
+	<head>
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/stylesprofile.css' %}">
+        <script src="{% static 'js/JavaS.js' %}"></script>
+	</head>
+		<div class="content">
+			<button class="cateselect" onclick="selectavion()"> {% load static %} <img src="{% static 'image/CAT_Avion.png' %}" class="logoselect"></button>
+			<button class="cateselect" onclick="selecttimbre()"> {% load static %} <img src="{% static 'image/CAT_Timbre.png' %}" class="logoselect"></button>
+			<button class="cateselect" onclick="selectvins()"> {% load static %} <img src="{% static 'image/CAT_Vins.png' %}" class="logoselect"></button>
+			<button class="cateselect" onclick="selectautre()"> ?? </button>
+			<button class="editselect" onclick="openedit()"> {% load static %} <img src="{% static 'image/editbutton.png' %}" class="logoselect"></button>
+		</div>
+			<div class="profil_defaut"> 
+				<div class="infointern">
+					<p> Modifier le compte :<div class="infointernreponse"> > </div><a href="login/edit/"> <button class="modifinfointern" > MODIFIER </button></a> </p>
+				</div>
+			</div>
+		<div class="pannel">
+			<div id="profil_avion" class="profil_avion">  </div>
+			<div id="profil_timbre" class="profil_timbre"> </div>
+			<div id="profil_vins" class="profil_vins"> </div>
+			<div id="profil_autre" class="profil_autre"> </div>
+		</div>
+		<button class="closebuttonprofil" onclick="close_select()"> X </button>
+		<div id="editchoix" class="editchoix">
+			<button class="cateselect" onclick="#"> {% load static %} <img src="{% static 'image/CAT_Avion.png' %}" class="logoselect"></button>
+			<button class="cateselect" onclick="#"> {% load static %} <img src="{% static 'image/CAT_Timbre.png' %}" class="logoselect"></button>
+			<button class="cateselect" onclick="#"> {% load static %} <img src="{% static 'image/CAT_Vins.png' %}" class="logoselect"></button>
+			<button class="cateselect" onclick="#"> ?? </button> 
+		</div>
+		<button id="closebuttonedit" class="closebuttonedit" onclick="clsedit()"> X </button>
+{%endblock%}
+
+
+

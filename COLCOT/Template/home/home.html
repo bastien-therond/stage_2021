@@ -1,0 +1,43 @@
+{% extends 'base/base.html' %}
+
+{% block content%}
+	<head>
+		{% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesHome.css' %}">
+	</head>
+
+	<div class="ajouter">
+		<a  class="LienAjout" href="/depot-annonce"> {% load static %} <img src="{% static 'image/ajouterblack.png' %}" width="35px" id="ajouterblack" class="ajouterblack"> </a>
+		<a  class="LienAjout" href="/depot-annonce"> {% load static %} <img src="{% static 'image/ajouterwhite.png' %}" width="35px" id="ajouterwhite" class="ajouterwhite"> </a>
+	</div>
+
+	{% for i in form %} 
+	<article class="annonce">
+		<div class="annonceImage">
+			<img src={{ i.docfile.url }} heigh='300px' width='350px'>
+		</div>
+
+		<div class="annonceShort" id='annonceShort'>
+			<div class="annonceTitle"><a href='#'>{{ i.modele }}</a></div>
+			<p class="annoncePrix">{{ i.prix }}€</p>
+		</div>
+		
+		<div class="annonceBody">
+			<div class="annonceTitle"><a href='#'>{{ i.modele }}</a></div>
+			<p class="annoncePrix">{{ i.prix }}€</p>
+			<p class="annonceDescription">{{ i.description }}</p>
+			<footer class="annonceFooter">
+				<button class="annonceBoutton"href='#'>Voir plus</button>
+				<span class="datePublication">Publié le {{i.date_created}}</span>
+			</footer>
+		</div>
+	</article>
+	{% endfor %}
+
+	{% comment %} <script>
+		// $('.annonceBody').hide();
+		// $('.annonce').hover(function(){
+		// 	$('.annonceBody').show()
+		// })
+	</script> {% endcomment %}
+{%endblock%}
